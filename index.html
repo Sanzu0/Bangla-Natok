@@ -12,9 +12,9 @@
         }
 
         body {
-            font-family: Courier, monospace; /* Apply Courier font globally */
+            font-family: Courier, monospace;
             background-color: #f4f4f4;
-            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-y: auto;
         }
 
         /* Header Section */
@@ -26,7 +26,6 @@
             padding: 1rem;
         }
 
-        /* Menu Icon and Logo on the Left */
         header .logo {
             display: flex;
             align-items: center;
@@ -39,15 +38,14 @@
         }
 
         header .logo img {
-            width: 150px; /* Larger logo size */
+            width: 150px;
             height: auto;
         }
 
-        /* Search Icon on the Right */
         header .search-icon {
             font-size: 1.5rem;
             cursor: pointer;
-            margin-right: 1.5rem; /* Add gap on the right */
+            margin-right: 1.5rem;
         }
 
         /* Main Body Section */
@@ -62,54 +60,33 @@
         }
 
         main h4 {
-            font-weight: normal; /* Removes the bold effect */
+            font-weight: normal;
         }
 
         main p.large-text {
-            font-size: 2rem; /* Larger font size for "নতুন বাংলা নাটক" */
-            color: #333; /* Optional: change color */
+            font-size: 2rem;
+            color: #333;
             margin-bottom: 1rem;
-            font-weight: bold; /* Bold text */
-        }
-
-        /* Color Classes */
-        .orange-text {
-            color: orange;
             font-weight: bold;
         }
 
-        .red-text {
-            color: red;
-            font-weight: bold;
-        }
-
-        /* Centering the specific text */
         .center-text {
             text-align: center;
-            font-size: 1rem; /* Smaller font size for the specific text */
+            font-size: 1rem;
         }
 
-        /* Black color for "নতুন বাংলা নাটক" */
         .black-text {
             color: black;
         }
 
         /* Centering the image and making it responsive */
         .thumbnail {
-            width: 100%; /* Make image width 100% of its parent container */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 600px; /* Set max width to 600px */
+            width: 100%;
+            height: auto;
+            max-width: 600px;
             display: block;
-            margin: 20px auto; /* Center the image horizontally */
-            object-fit: cover; /* Ensures the image fits properly */
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #ffffff; /* White background for footer */
-            color: #333;
-            padding: 1rem;
-            text-align: center;
+            margin: 20px auto;
+            object-fit: cover;
         }
 
         /* Button Styling */
@@ -119,22 +96,22 @@
         }
 
         .btn {
-            padding: 10px 20px;
-            font-size: 1rem;
+            padding: 12px 30px;
+            font-size: 1.2rem;
             color: white;
-            background-color: red; /* Red button color */
+            background-color: red;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 0 10px;
+            margin: 10px;
             transition: background-color 0.3s;
         }
 
         .btn:hover {
-            background-color: #c13a2d; /* Darker red on hover */
+            background-color: #c13a2d;
         }
 
-        /* New text style */
+        /* WATCH More New Natok - Click Here Text */
         .watch-more {
             text-align: center;
             font-size: 1.2rem;
@@ -144,78 +121,40 @@
             cursor: pointer;
         }
 
-        /* Centered Footer Text */
+        /* Footer Section */
+        footer {
+            background-color: #ffffff;
+            color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+
         .footer-center {
             text-align: center;
             font-size: 1rem;
-            color: #333; /* Dark gray for footer text */
+            color: #333;
         }
 
-        /* Bold Style for Specific Text */
-        .bold-text {
-            font-weight: bold;
-        }
-
-        /* Mobile Optimization */
+        /* Mobile Optimization for Buttons */
         @media (max-width: 768px) {
-            main {
-                padding: 1rem; /* Reduce padding for mobile devices */
-                width: 95%; /* Increase the width for mobile */
-            }
-
-            .large-text {
-                font-size: 1.5rem; /* Smaller font size on mobile */
-                margin-bottom: 0.8rem; /* Smaller margin */
-            }
-
-            .thumbnail {
-                max-width: 100%; /* Image takes 100% of available space on mobile */
-                height: auto;
-            }
-
             .btn {
-                font-size: 0.9rem; /* Smaller font size for buttons */
-                padding: 8px 15px; /* Smaller button padding */
-            }
-
-            .watch-more {
-                font-size: 1rem; /* Smaller font size for "Click Here" */
+                font-size: 1rem; /* Smaller font size for mobile */
+                padding: 10px 20px; /* Reduce button padding for mobile */
+                width: 100%; /* Full width on mobile */
+                box-sizing: border-box; /* Ensure full width */
+                margin: 10px 0; /* Add vertical margin to space buttons */
             }
 
             .button-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
+                gap: 15px; /* Add spacing between buttons */
+            }
+
+            .watch-more {
+                font-size: 1rem; /* Adjust font size for mobile */
                 margin-top: 20px;
-            }
-
-            footer {
-                padding: 1rem; /* Keep the padding consistent for mobile */
-            }
-
-            .footer-center p {
-                font-size: 0.9rem; /* Slightly smaller font size for mobile */
-                margin: 0; /* Remove any extra margin */
-            }
-
-            /* Mobile Optimization for Header */
-            header {
-                padding: 0.5rem; /* Reduce padding for mobile devices */
-            }
-
-            header .menu-icon {
-                font-size: 1.5rem; /* Smaller menu icon */
-                margin-right: 0.8rem;
-            }
-
-            header .logo img {
-                width: 120px; /* Smaller logo for mobile */
-            }
-
-            header .search-icon {
-                font-size: 1.2rem; /* Smaller search icon */
-                margin-right: 1rem;
             }
         }
     </style>
@@ -239,14 +178,14 @@
     <!-- Body Section -->
     <main>
         <h4>Home</h4>
-        <p class="large-text black-text bold-text">নতুন বাংলা নাটক</p> <!-- Bold text for "নতুন বাংলা নাটক" -->
+        <p class="large-text black-text">নতুন বাংলা নাটক</p>
 
         <!-- Clickable Image -->
         <a href="https://www.example.com" target="_blank"> <!-- Replace with your desired URL -->
             <img src="thumbnail.jpg" alt="Thumbnail" class="thumbnail"> <!-- Replace "thumbnail.jpg" with your image file -->
         </a>
 
-        <p class="center-text bold-text">
+        <p class="center-text">
             আপনার প্রিয় বাংলা নাটক এখনই দেখুন! 
             <span class="orange-text">রেজিস্টার করে</span> 
             সেরা বিনোদন উপভোগ করুন - 
@@ -272,7 +211,6 @@
 
     <!-- Footer Section -->
     <footer>
-        <!-- Centered Footer Text -->
         <div class="footer-center">
             <p>Distributed by Docs | &copy; 2024</p>
         </div>
