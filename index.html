@@ -21,9 +21,9 @@
         header {
             background-color: #e7ecef;
             display: flex;
+            align-items: center;
             justify-content: space-between;
             padding: 1rem;
-            align-items: center;
         }
 
         /* Menu Icon and Logo on the Left */
@@ -40,6 +40,7 @@
 
         header .logo img {
             width: 150px; /* Larger logo size */
+            height: auto;
         }
 
         /* Search Icon on the Right */
@@ -47,34 +48,6 @@
             font-size: 1.5rem;
             cursor: pointer;
             margin-right: 1.5rem; /* Add gap on the right */
-        }
-
-        /* Mobile Optimization for Header */
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem;
-                flex-direction: column; /* Stack the items vertically on small screens */
-                align-items: center; /* Center the items */
-            }
-
-            header .logo {
-                margin-bottom: 1rem; /* Add space below the logo */
-                justify-content: center; /* Center the logo */
-            }
-
-            header .menu-icon {
-                font-size: 1.6rem;
-                margin-right: 0.5rem;
-            }
-
-            header .logo img {
-                width: 120px; /* Adjust logo size on smaller screens */
-            }
-
-            header .search-icon {
-                font-size: 1.4rem; /* Adjust search icon size */
-                margin-right: 0; /* Remove margin for better alignment */
-            }
         }
 
         /* Main Body Section */
@@ -186,7 +159,7 @@
         /* Mobile Optimization */
         @media (max-width: 768px) {
             main {
-                padding: 1rem; /* Reduce padding on smaller screens */
+                padding: 1rem; /* Reduce padding for mobile devices */
                 width: 95%; /* Increase the width for mobile */
             }
 
@@ -224,6 +197,25 @@
             .footer-center p {
                 font-size: 0.9rem; /* Slightly smaller font size for mobile */
                 margin: 0; /* Remove any extra margin */
+            }
+
+            /* Mobile Optimization for Header */
+            header {
+                padding: 0.5rem; /* Reduce padding for mobile devices */
+            }
+
+            header .menu-icon {
+                font-size: 1.5rem; /* Smaller menu icon */
+                margin-right: 0.8rem;
+            }
+
+            header .logo img {
+                width: 120px; /* Smaller logo for mobile */
+            }
+
+            header .search-icon {
+                font-size: 1.2rem; /* Smaller search icon */
+                margin-right: 1rem;
             }
         }
     </style>
