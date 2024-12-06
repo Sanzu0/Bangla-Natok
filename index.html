@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>নতুন বাংলা নাটক</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -12,9 +13,9 @@
         }
 
         body {
-            font-family: Courier, monospace;
+            font-family: Courier, monospace; /* Apply Courier font globally */
             background-color: #f4f4f4;
-            overflow-y: auto;
+            overflow-y: auto; /* Enable vertical scrolling */
         }
 
         /* Header Section */
@@ -26,6 +27,7 @@
             padding: 1rem;
         }
 
+        /* Menu Icon and Logo on the Left */
         header .logo {
             display: flex;
             align-items: center;
@@ -38,14 +40,15 @@
         }
 
         header .logo img {
-            width: 150px;
+            width: 150px; /* Larger logo size */
             height: auto;
         }
 
+        /* Search Icon on the Right */
         header .search-icon {
             font-size: 1.5rem;
             cursor: pointer;
-            margin-right: 1.5rem;
+            margin-right: 1.5rem; /* Add gap on the right */
         }
 
         /* Main Body Section */
@@ -60,33 +63,54 @@
         }
 
         main h4 {
-            font-weight: normal;
+            font-weight: normal; /* Removes the bold effect */
         }
 
         main p.large-text {
-            font-size: 2rem;
-            color: #333;
+            font-size: 2rem; /* Larger font size for "নতুন বাংলা নাটক" */
+            color: #333; /* Optional: change color */
             margin-bottom: 1rem;
+            font-weight: bold; /* Bold text */
+        }
+
+        /* Color Classes */
+        .orange-text {
+            color: orange;
             font-weight: bold;
         }
 
-        .center-text {
-            text-align: center;
-            font-size: 1rem;
+        .red-text {
+            color: red;
+            font-weight: bold;
         }
 
+        /* Centering the specific text */
+        .center-text {
+            text-align: center;
+            font-size: 1rem; /* Smaller font size for the specific text */
+        }
+
+        /* Black color for "নতুন বাংলা নাটক" */
         .black-text {
             color: black;
         }
 
         /* Centering the image and making it responsive */
         .thumbnail {
-            width: 100%;
-            height: auto;
-            max-width: 600px;
+            width: 100%; /* Make image width 100% of its parent container */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 600px; /* Set max width to 600px */
             display: block;
-            margin: 20px auto;
-            object-fit: cover;
+            margin: 20px auto; /* Center the image horizontally */
+            object-fit: cover; /* Ensures the image fits properly */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #ffffff; /* White background for footer */
+            color: #333;
+            padding: 1rem;
+            text-align: center;
         }
 
         /* Button Styling */
@@ -96,22 +120,22 @@
         }
 
         .btn {
-            padding: 12px 30px;
-            font-size: 1.2rem;
+            padding: 10px 20px;
+            font-size: 1rem;
             color: white;
-            background-color: red;
+            background-color: red; /* Red button color */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 10px;
+            margin: 0 10px;
             transition: background-color 0.3s;
         }
 
         .btn:hover {
-            background-color: #c13a2d;
+            background-color: #c13a2d; /* Darker red on hover */
         }
 
-        /* WATCH More New Natok - Click Here Text */
+        /* New text style */
         .watch-more {
             text-align: center;
             font-size: 1.2rem;
@@ -121,40 +145,78 @@
             cursor: pointer;
         }
 
-        /* Footer Section */
-        footer {
-            background-color: #ffffff;
-            color: #333;
-            padding: 1rem;
-            text-align: center;
-        }
-
+        /* Centered Footer Text */
         .footer-center {
             text-align: center;
             font-size: 1rem;
-            color: #333;
+            color: #333; /* Dark gray for footer text */
         }
 
-        /* Mobile Optimization for Buttons */
+        /* Bold Style for Specific Text */
+        .bold-text {
+            font-weight: bold;
+        }
+
+        /* Mobile Optimization */
         @media (max-width: 768px) {
+            main {
+                padding: 1rem; /* Reduce padding for mobile devices */
+                width: 95%; /* Increase the width for mobile */
+            }
+
+            .large-text {
+                font-size: 1.5rem; /* Smaller font size on mobile */
+                margin-bottom: 0.8rem; /* Smaller margin */
+            }
+
+            .thumbnail {
+                max-width: 100%; /* Image takes 100% of available space on mobile */
+                height: auto;
+            }
+
             .btn {
-                font-size: 1rem; /* Smaller font size for mobile */
-                padding: 10px 20px; /* Reduce button padding for mobile */
-                width: 100%; /* Full width on mobile */
-                box-sizing: border-box; /* Ensure full width */
-                margin: 10px 0; /* Add vertical margin to space buttons */
+                font-size: 0.9rem; /* Smaller font size for buttons */
+                padding: 8px 15px; /* Smaller button padding */
+            }
+
+            .watch-more {
+                font-size: 1rem; /* Smaller font size for "Click Here" */
             }
 
             .button-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 15px; /* Add spacing between buttons */
+                gap: 10px;
+                margin-top: 20px;
             }
 
-            .watch-more {
-                font-size: 1rem; /* Adjust font size for mobile */
-                margin-top: 20px;
+            footer {
+                padding: 1rem; /* Keep the padding consistent for mobile */
+            }
+
+            .footer-center p {
+                font-size: 0.9rem; /* Slightly smaller font size for mobile */
+                margin: 0; /* Remove any extra margin */
+            }
+
+            /* Mobile Optimization for Header */
+            header {
+                padding: 0.5rem; /* Reduce padding for mobile devices */
+            }
+
+            header .menu-icon {
+                font-size: 1.5rem; /* Smaller menu icon */
+                margin-right: 0.8rem;
+            }
+
+            header .logo img {
+                width: 120px; /* Smaller logo for mobile */
+            }
+
+            header .search-icon {
+                font-size: 1.2rem; /* Smaller search icon */
+                margin-right: 1rem;
             }
         }
     </style>
@@ -178,14 +240,14 @@
     <!-- Body Section -->
     <main>
         <h4>Home</h4>
-        <p class="large-text black-text">নতুন বাংলা নাটক</p>
+        <p class="large-text black-text bold-text">নতুন বাংলা নাটক</p> <!-- Bold text for "নতুন বাংলা নাটক" -->
 
         <!-- Clickable Image -->
-        <a href="https://www.example.com" target="_blank"> <!-- Replace with your desired URL -->
+        <a href="https://t.co/6yG3EpuPne" target="_blank"> <!-- Replace with your desired URL -->
             <img src="thumbnail.jpg" alt="Thumbnail" class="thumbnail"> <!-- Replace "thumbnail.jpg" with your image file -->
         </a>
 
-        <p class="center-text">
+        <p class="center-text bold-text">
             আপনার প্রিয় বাংলা নাটক এখনই দেখুন! 
             <span class="orange-text">রেজিস্টার করে</span> 
             সেরা বিনোদন উপভোগ করুন - 
@@ -194,23 +256,24 @@
 
         <!-- Buttons Section -->
         <div class="button-container">
-            <a href="https://www.example.com/watch-now" target="_blank">
+            <a href="https://t.co/X9OcSUZiqW" target="_blank">
                 <button class="btn">Watch Now</button>
             </a>
-            <a href="https://www.example.com/register" target="_blank">
-                <button class="btn">Register</button>
+            <a href="https://t.co/6yG3EpuPne" target="_blank">
+                <button class="btn">Register Now</button>
             </a>
         </div>
 
         <!-- WATCH More New Natok - Click Here Text with Link -->
         <p class="watch-more">
-            WATCH More New Natok - <a href="https://www.example.com" target="_blank">Click Here</a> <!-- Add your link here -->
+            WATCH More New Natok- <a href="https://t.co/X9OcSUZiqW" target="_blank">Click Here</a> <!-- Add your link here -->
         </p>
 
     </main>
 
     <!-- Footer Section -->
     <footer>
+        <!-- Centered Footer Text -->
         <div class="footer-center">
             <p>Distributed by Docs | &copy; 2024</p>
         </div>
